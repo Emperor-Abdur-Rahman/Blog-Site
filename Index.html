@@ -15,35 +15,18 @@
 </head>
 <body>
     <div class="site">
-    
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="width:200px;display:none" id="mySidebar">
-      <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">&times; Close</button>
-      <li><button data-page="page1">Gaming Blog</button></li>
-      <li><button data-page="page2">Baking Blog</button></li>
-      <li><button data-page="page3">Books Blog</button></li>
-      <li><button data-page="page4"> Contact</button></li>
-    </div>
-    
-    <div class="w3-main" style="margin-left:200px">
-      <div class="w3-teal">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
-          <!-- Main content goes here -->
+      <nav class="navbar bg-body-tertiary">
+        <form class="container-fluid justify-content-start">
+          <button class="btn btn-outline-success me-2" type="button" data-page="page0">Home</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" data-page="page1">Gaming Blog</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" data-page="page2">Baking Blog</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" data-page="page3">Books Blog</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button" data-page="page4">Sign-up/Contact</button>
+
+        </form>
+      </nav>
+      <div id="page0" class="page page0">
         </div>
-      </div>
-    </div>
-    
-    <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementsByClassName("w3-main")[0].style.marginLeft = "200px";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-      document.getElementsByClassName("w3-main")[0].style.marginLeft = "0";
-    }
-    </script>
     <div id="page1" class="page page1">
     <div class="container">
         <h1 style="color: whitesmoke;">Gaming Blog</h1>

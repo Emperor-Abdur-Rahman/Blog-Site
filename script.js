@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    showPage('page1');
+    showPage('page0');
 });
 
